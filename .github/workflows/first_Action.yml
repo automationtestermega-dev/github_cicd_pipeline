@@ -4,13 +4,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Get code 
-        run: echo "welcome Mega"
-      - name: Print ci_cd
-        run: echo "welcome to ci_cd pipeline mega you are at step1 one"
-    
       - name: Get code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: Install node
         uses: actions/setup-node@v6
         with:
