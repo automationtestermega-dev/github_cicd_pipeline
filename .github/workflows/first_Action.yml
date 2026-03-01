@@ -1,4 +1,4 @@
-name: Deploy Project
+name: welcome 
 on:
   pull_request:
     type:
