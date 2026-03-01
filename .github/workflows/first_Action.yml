@@ -8,6 +8,16 @@ jobs:
         run: echo "welcome Mega"
       - name: Print ci_cd
         run: echo "welcome to ci_cd pipeline mega you are at step1 one"
-
+    
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: Install node
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Install dependencies
+        run : npm ci
+      - name: Run Tests
+        run : npm test
   
         
