@@ -1,9 +1,13 @@
 name: welcome 
 on:
-  pull_request:
-    type:
-      - opened
-  workflow_dispatch:
+# only push to this branch will run the workflow otherwise not
+  push:
+    branches:
+      -main
+      -dev-*
+# only push when there is a file added in the folder
+    paths:
+      '.github/workflows/*'
 jobs:
   test:
     runs-on: ubuntu-latest
