@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        run : echo "welcome"
+        run : echo "welcome mega"
