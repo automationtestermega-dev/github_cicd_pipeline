@@ -1,0 +1,13 @@
+name: Test Project
+on: push 
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code 
+        run: echo "welcome Mega"
+      - name: Print ci_cd
+        run: echo "welcome to ci_cd pipeline mega you are at step1 one"
+
+  
+        
